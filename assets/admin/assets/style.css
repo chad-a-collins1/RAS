@@ -1,0 +1,6 @@
+.delete_tbl_row:hover i {
+	color: red;
+}
+.primary_btn_hover:hover {
+	color: #fff !important;
+}
