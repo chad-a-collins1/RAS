@@ -44,8 +44,8 @@ class Admin extends CI_Controller {
 			$config['smtp_host'] = 'ssl://smtp.gmail.com';
 			// $config['smtp_host'] = 'ssl://smtp.googlemail.com';
 			$config['smtp_port'] = 465;
-			$config['smtp_user'] = 'suryainfotechpc5@gmail.com';
-			$config['smtp_pass'] = 'suryainfotech@123';
+			$config['smtp_user'] = 'dummy';
+			$config['smtp_pass'] = 'dummy';
 			$config['charset']  = 'utf-8';
 			$config['mailtype'] = 'text';
 			$config['wordWrap'] = true;
@@ -54,7 +54,7 @@ class Admin extends CI_Controller {
 			$this->email->initialize($config);
 			
 			$this->email->set_newline("\r\n");
-			$this->email->from('suryainfotechpc5@gmail.com', 'eComply');
+			$this->email->from('dummy', 'eComply');
 			$this->email->to($email);
 			$this->email->subject('eComply Training and Certification');
 			$txt = "Your Password is : ".$user_data[0]['password'];
